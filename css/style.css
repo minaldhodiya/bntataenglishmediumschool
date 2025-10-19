@@ -1,0 +1,465 @@
+html,
+body {
+  background-color: #000;
+     color: #fff;
+}
+
+.search-box {
+  position: relative;
+  max-width: 400px;
+  /* 👈 Center box ni max width */
+  width: 100%;
+}
+
+.search-input {
+  padding-right: 40px;
+  /* search icon mate space */
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+.pdn{
+  margin-top:  80px;
+}
+.btn-dark,
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active,
+.navbar-toggler,
+.navbar-toggler:hover,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  box-shadow: none !important;
+  outline: none !important;
+  background-color: #212529 !important;
+  /* force same dark color */
+  border: none !important;
+}
+
+
+/* Modal styling */
+.custom-modal .modal-content {
+  background-color: #000;
+  /* Black background */
+  color: #fff;
+  /* White text */
+  border-radius: 0;
+  /* Square corners */
+  padding: 20px;
+}
+
+.custom-modal .modal-header {
+  border-bottom: none;
+  justify-content: center;
+  /* Title center */
+  position: relative;
+  /* For close button positioning */
+}
+
+.custom-modal .modal-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+.img-card {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.img-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+/* Close button top-right */
+.custom-modal .btn-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.custom-modal .modal-body {
+  text-align: center;
+}
+
+.custom-modal input {
+  background: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.custom-modal .btn-outline-light {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.custom-modal .btn-success {
+  width: 100%;
+  background-color: #00d4aa;
+  border: none;
+}
+
+.custom-modal small {
+  color: red;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.custom-margin {
+  margin-top: 100px !important;
+}
+
+/* 👇 Modal size vadhaaryu */
+.custom-modal .modal-dialog {
+  max-width: 500px;
+  /* Width vadhaaryu */
+}
+
+.custom-modal .btn-outline-light:hover {
+  background-color: #000 !important;
+  /* hover par pan black j rahe */
+  color: #fff !important;
+  /* text white j rahe */
+  border-color: #fff !important;
+  /* border white j rahe */
+}
+
+.f-size {
+  font-size: 10px;
+}
+
+.chng-color {
+  transition: color 0.3s ease;
+  /* smooth animation */
+}
+
+.chng-color:hover {
+  color: #00d4aa !important;
+  /* hover par greenish color */
+}
+
+/* Hover par dropdown open */
+.hovercls:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  /* jhatko na aave */
+
+}
+
+.addtocat {
+  position: relative;
+}
+
+.addtocat::before {
+  content: "0";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: -5px;
+  left: 72%;
+  transform: translateX(-50%);
+  background: #00d4aa;
+  color: #000;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+/* Smooth fade override */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+}
+
+/* Custom controls */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  left: 15px;
+}
+
+.carousel-control-next {
+  right: 15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* Indicators (progress bar style) */
+.carousel-indicators [data-bs-target] {
+  width: 100px;
+  height: 2px;
+  margin: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-indicators [data-bs-target] .progress-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: #858686;
+}
+
+.carousel-indicators .active .progress-bar {
+  animation: progress 5s linear forwards;
+}
+
+.hero .carousel-item {
+  height: 776px;
+  /* 👈 tamne jetli height joiati hoi */
+  /* object-fit: cover; */
+  background-size: cover;
+  /* image crop thay ne fit thai jase */
+}
+
+img {
+  width: 100%;
+}
+
+.coming_up img {
+
+  width: 100%;
+  background-size: cover;
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.category-card {
+  background: linear-gradient(145deg, #1c1f3a, #2c1d4f);
+  border-radius: 20px;
+  padding: 15px 15px;
+  text-align: center;
+  color: #fff;
+}
+
+/* benk slider start */
+.boffer .slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  padding: 20px 0;
+}
+
+.boffer .slide-track {
+  display: flex;
+  width: calc(250px * 10);
+  /* jitni images ho utna multiply */
+  animation: scroll 20s linear infinite;
+}
+
+.boffer .slide {
+  width: 250px;
+  margin: 0 15px;
+  flex-shrink: 0;
+}
+
+.boffer .slide img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* benk slider End */
+
+
+.card-custom {
+  border: none;
+  background: #1a1a1a;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-custom img {
+  width: 100%;
+  height: auto;
+}
+
+.card-custom .card-body {
+  padding: 10px;
+}
+
+.card-custom .price {
+  font-size: 1.2rem;
+}
+
+.card-custom .original-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 5px;
+}
+
+.star {
+  color: #888;
+}
+
+.star-4 {
+  color: cyan;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: rgb(18, 218, 168);
+  color: black;
+}
+
+.feature-bar {
+    padding: 10px 0;
+}
+
+.feature-item {
+    color: #ffffff;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.feature-item a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-item a img {
+    width: 150px;
+    height: 130px;
+    margin-bottom: 5px;
+}
+
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: aqua;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.email-box input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 70%;
+    border-radius: 4px 0 0 4px;
+}
+
+.email-box button {
+    border: none;
+    padding: 10px 20px;
+    background: #fff;
+    color: #000;
+    border-radius: 0 4px 4px 0;
+}
+
+.fa-youtube:hover {
+    color: red;
+}
+
+.fa-facebook-f:hover {
+    color: blue;
+}
+
+.fa-linkedin-in:hover {
+    color: blue;
+}
+
+.fa-twitter:hover {
+    color: blue;
+}
+
+.fa-instagram:hover {
+    color: red;
+}
+.logo-img {
+    width: 250px;
+    object-fit: contain;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.content p {
+        width: 65%;
+        padding-top: 10px;
+    }

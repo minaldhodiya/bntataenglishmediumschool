@@ -1,0 +1,11 @@
+    @media (max-width:1018px) {
+            .menu-text {
+                display: none;
+            }
+
+            /* icon ne logo ni left side laavva */
+            .menu-btn {
+                order: -1; /* item ne left shift kare */
+                margin-right: 10px;
+            }
+        }
